@@ -1,0 +1,162 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+}
+
+tr.selected {
+  background-color: aliceblue; 
+}
+tr.notSelected:hover {
+  background-color: aliceblue; 
+}
+
+.delBtn{
+  background-color: rgb(232, 38, 38);
+}
+.delBtn:hover{
+  background-color: rgb(193, 52, 52);
+}
+
+input{
+  height: 20px;
+}
+
+.searchInput{
+  height: 30px;
+  margin-left: 15px;
+  width: 200px;
+}
+
+.green-text {
+  color: green;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.red-text {
+  color: red;
+}
+
+.purple-text {
+  color: purple;
+}
+
+.black-text {
+  color: black;
+}
+
+/* add customer form */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form label {
+  margin: 10px 0 5px;
+}
+
+.modal-content form input,
+.modal-content form select {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-content form button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.modal-content form button[type="button"] {
+  background: #ccc;
+  border: none;
+}
+
+.modal-content form button[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
